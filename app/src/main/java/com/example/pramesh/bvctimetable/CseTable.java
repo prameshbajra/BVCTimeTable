@@ -15,7 +15,7 @@ import android.widget.TextView;
 
 public class CseTable extends AppCompatActivity {
 
-    private TextView mondayFirst,mondaySecond;
+    private TextView mondayFirst,mondaySecond,mondayThird;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +26,7 @@ public class CseTable extends AppCompatActivity {
 
         mondayFirst=(TextView) findViewById(R.id.mondayFirst);
         mondaySecond = (TextView) findViewById(R.id.mondaySecond);
+        mondayThird = (TextView) findViewById(R.id.mondayThird);
 
         mondayFirst.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,6 +50,16 @@ public class CseTable extends AppCompatActivity {
             }
         });
 
+        mondayThird.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
+                builder.setTitle("Android Training Lab");
+                builder.setMessage("Taught By RVS sir");
+                builder.setCancelable(true);
+                builder.show();
+            }
+        });
     }
 
 
