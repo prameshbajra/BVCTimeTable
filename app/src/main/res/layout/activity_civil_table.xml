@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_civil_table"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pramesh.bvctimetable.CivilTable"
+    android:background="@color/colorPrimary">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/designborders">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/daysLayout">
+
+                <TextView
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/blank"
+                    android:textAlignment="center"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="Monday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView16"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke"/>
+
+                <TextView
+                    android:text="Tuesday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView11"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke"/>
+
+                <TextView
+                    android:text="Wednesday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView10"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke"/>
+
+                <TextView
+                    android:text="Thrusday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView14"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke"/>
+
+                <TextView
+                    android:text="Friday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView13"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke"/>
+
+                <TextView
+                    android:text="Saturday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView12"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/whiteStroke"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:text="1st"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/firstPeriod"
+                    android:textAlignment="center"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mondayFirst"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tuesdayFirst"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/wednesdayFirst"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/thursdayFirst"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fridayFirst"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/saturdayFirst"
+                    android:textAlignment="center"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+
+                <TextView
+                    android:text="2nd "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:id="@+id/secondPeriod"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mondaySecond"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tuesdaySecond"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/wednesdaySecond"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/thrusdaySecond"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fridaySecond"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/saturdaySecond"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:text="3rd "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/thirdPeriod"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mondayThird"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tuesdayThird"
+                    android:textAlignment="center"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/wednesdayThird"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/thrusdayThird"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fridayThird"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/saturdayThird"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textFirst"
+                    android:textAlignment="center"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text=" BREAK "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView31"
+                    android:textAlignment="center"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView30"
+                    android:textAlignment="center"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView29"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="BREAK"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView28"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView27"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textSecond"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/whiteStroke" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:text="4th "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fourthPeriod"
+                    android:textAlignment="center"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mondayFourth"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tuesdayFourth"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/wednesdayFourth"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/thrusdayFourth"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fridayFourth"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/saturdayFourth"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:text="5th "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fifthPeriod"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mondayFifth"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tuesdayFifth"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/wednesdayFifth"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/thrusdayFifth"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fridayFifth"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/saturdayFifth"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:text="6th"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sixthPeriod"
+                    android:textAlignment="center"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mondaySixth"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tuesdaySixth"
+                    android:textAlignment="center"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/wednesdaySixth"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/thrusdaySixth"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fridaySixth"
+                    android:textAlignment="center"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/saturdaySixth"
+                    android:textAlignment="center"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:text="7th"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seventhPeriod"
+                    android:textAlignment="center"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mondaySeventh"
+                    android:textAlignment="center"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tuesdaySeventh"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/wednesdaySeventh"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/thrusdaySeventh"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fridaySeventh"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:background="@drawable/designthinborders"
+                    android:textColor="@color/whiteStroke" />
+
+                <TextView
+                    android:text="DMM II"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/saturdaySeventh"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/whiteStroke" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
