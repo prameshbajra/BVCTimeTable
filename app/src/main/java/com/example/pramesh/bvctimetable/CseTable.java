@@ -15,7 +15,7 @@ import android.widget.TextView;
 
 public class CseTable extends AppCompatActivity {
 
-    private TextView mondayFirst,mondaySecond,mondayThird;
+    private TextView mondayFirst,mondaySecond,mondayThird,tuesdayFirst;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +27,19 @@ public class CseTable extends AppCompatActivity {
         mondayFirst=(TextView) findViewById(R.id.mondayFirst);
         mondaySecond = (TextView) findViewById(R.id.mondaySecond);
         mondayThird = (TextView) findViewById(R.id.mondayThird);
+        tuesdayFirst = (TextView) findViewById(R.id.tuesdayFirst);
+
+        tuesdayFirst.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String tuesdayFirstVal = tuesdayFirst.getText().toString();
+                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
+                builder.setTitle(tuesdayFirstVal);
+                builder.setMessage("Taught By Ramakrishna sir");
+                builder.setCancelable(true);
+                builder.show();
+            }
+        });
 
         mondayFirst.setOnClickListener(new View.OnClickListener() {
             @Override
