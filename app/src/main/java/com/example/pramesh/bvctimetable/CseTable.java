@@ -15,7 +15,8 @@ import android.widget.TextView;
 
 public class CseTable extends AppCompatActivity {
 
-    private TextView mondayFirst,mondaySecond,mondayThird,tuesdayFirst;
+    private TextView mondayFirst,mondaySecond,mondayThird,mondayFourth,mondayFifth,mondaySixth,mondaySeventh;
+    private TextView tuesdayFirst,tuesdaySecond,tuesdayThird,tuesdayFourth,tuesdayFifth,tuesdaySixth,tuesdaySeventh;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
