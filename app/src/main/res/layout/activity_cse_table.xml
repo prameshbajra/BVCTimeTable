@@ -132,11 +132,13 @@
                     android:textColor="@color/whiteStroke" />
 
                 <TextView
-                    android:text="DWDM"
+                    android:text=""
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/tuesdayFirst"
                     android:padding="10dp"
+                    android:hint="DWDM"
+                    android:textColorHint="@color/whiteStroke"
                     android:textAlignment="center"
                     android:layout_weight="1"
                     android:background="@drawable/designthinborders"
