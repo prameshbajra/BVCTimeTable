@@ -11,14 +11,9 @@ import android.widget.Toast;
 
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.util.Map;
 
 
 public class CseTable extends AppCompatActivity {
@@ -30,13 +25,15 @@ public class CseTable extends AppCompatActivity {
     private TextView fridayFirst, fridaySecond, fridayThird, fridayFourth, fridayFifth, fridaySixth, fridaySeventh;
     private TextView saturdayFirst, saturdaySecond, saturdayThird, saturdayFourth, saturdayFifth, saturdaySixth, saturdaySeventh;
 
-
+    private Firebase firebaseData;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cse_table);
 
-
+        firebaseData = new Firebase("https://bvc-time-table.firebaseio.com/table/csetable");
+        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
+        firebaseData.keepSynced(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -605,7 +602,31 @@ public class CseTable extends AppCompatActivity {
         });
 
         //Firebase part yeta gareko xa ...
+        firebaseData.addValueEventListener(new com.firebase.client.ValueEventListener() {
+            @Override
+            public void onDataChange(com.firebase.client.DataSnapshot dataSnapshot) {
+                Map<String,String> map = dataSnapshot.getValue(Map.class);
 
+                // Setting up link with online data ...
+
+                String mondayFirstData = map.get("mondayFirst");
+                String mondaySecondData = map.get("mondaySecond");
+
+                String tuesdayFirstData = map.get("tuesdayFirst");
+
+                // Setting up actions for updation here on ...
+
+                mondayFirst.setText(mondayFirstData);
+                mondaySecond.setText(mondaySecondData);
+                tuesdayFirst.setText(tuesdayFirstData);
+
+            }
+
+            @Override
+            public void onCancelled(FirebaseError firebaseError) {
+
+            }
+        });
 
     }
 
