@@ -8,6 +8,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class MainActivity extends AppCompatActivity {
 
     Button cseButton ,eceButton, civilButton, eeeButton, mechButton;
@@ -27,6 +30,9 @@ public class MainActivity extends AppCompatActivity {
         actionBar.setLogo(R.mipmap.icon_launcher);
         actionBar.setDisplayUseLogoEnabled(true);
         actionBar.setDisplayShowHomeEnabled(true);
+
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd_HHmmss");
+        String currentDateandTime = sdf.format(new Date());
 
         cseButton.setOnClickListener(new View.OnClickListener() {
             @Override
