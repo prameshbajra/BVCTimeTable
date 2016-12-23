@@ -7,11 +7,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.firebase.client.Firebase;
-import com.firebase.client.FirebaseError;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.Map;
 
@@ -25,15 +26,41 @@ public class CseTable extends AppCompatActivity {
     private TextView fridayFirst, fridaySecond, fridayThird, fridayFourth, fridayFifth, fridaySixth, fridaySeventh;
     private TextView saturdayFirst, saturdaySecond, saturdayThird, saturdayFourth, saturdayFifth, saturdaySixth, saturdaySeventh;
 
-    private Firebase firebaseData;
+    private DatabaseReference firebaseData;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cse_table);
 
-        firebaseData = new Firebase("https://bvc-time-table.firebaseio.com/table/csetable");
-        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
+        firebaseData = FirebaseDatabase.getInstance().getReference().child("csetable");
         firebaseData.keepSynced(true);
+
+        firebaseData.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                Map<String, Object> map = (Map<String, Object>) dataSnapshot.getValue();
+
+                // Setting up link with online data ...
+
+                String mondayFirstData = (String) map.get("mondayFirst");
+                String mondaySecondData = (String) map.get("mondaySecond");
+
+                String tuesdayFirstData = (String) map.get("tuesdayFirst");
+
+                // Setting up actions for updation here on ...
+
+                mondayFirst.setText(mondayFirstData);
+                mondaySecond.setText(mondaySecondData);
+                tuesdayFirst.setText(tuesdayFirstData);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -602,31 +629,7 @@ public class CseTable extends AppCompatActivity {
         });
 
         //Firebase part yeta gareko xa ...
-        firebaseData.addValueEventListener(new com.firebase.client.ValueEventListener() {
-            @Override
-            public void onDataChange(com.firebase.client.DataSnapshot dataSnapshot) {
-                Map<String,String> map = dataSnapshot.getValue(Map.class);
 
-                // Setting up link with online data ...
-
-                String mondayFirstData = map.get("mondayFirst");
-                String mondaySecondData = map.get("mondaySecond");
-
-                String tuesdayFirstData = map.get("tuesdayFirst");
-
-                // Setting up actions for updation here on ...
-
-                mondayFirst.setText(mondayFirstData);
-                mondaySecond.setText(mondaySecondData);
-                tuesdayFirst.setText(tuesdayFirstData);
-
-            }
-
-            @Override
-            public void onCancelled(FirebaseError firebaseError) {
-
-            }
-        });
 
     }
 
