@@ -19,7 +19,7 @@ import java.util.Map;
 
 public class CseTable extends AppCompatActivity {
 
-    private TextView mondayFirst, mondaySecond, mondayThird, mondayFourth, mondayFifth, mondaySixth, mondaySeventh;
+    private TextView mondayFirst, mondaySecond, mondayThird, mondayForth, mondayFifth, mondaySixth, mondaySeventh;
     private TextView tuesdayFirst, tuesdaySecond, tuesdayThird, tuesdayFourth, tuesdayFifth, tuesdaySixth, tuesdaySeventh;
     private TextView wednesdayFirst, wednesdaySecond, wednesdayThird, wednesdayFourth, wednesdayFifth, wednesdaySixth, wednesdaySeventh;
     private TextView thrusdayFirst, thrusdaySecond, thrusdayThird, thrusdayFourth, thrusdayFifth, thrusdaySixth, thrusdaySeventh;
@@ -33,8 +33,10 @@ public class CseTable extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cse_table);
 
-        firebaseData = FirebaseDatabase.getInstance().getReference().child("csetable");
+        firebaseData = FirebaseDatabase.getInstance().getReference().child("csetablethreetwoA");
         firebaseData.keepSynced(true);
+
+        // Firebase stuff begins ...
 
         firebaseData.addValueEventListener(new ValueEventListener() {
             @Override
@@ -45,14 +47,102 @@ public class CseTable extends AppCompatActivity {
 
                 String mondayFirstData = (String) map.get("mondayFirst");
                 String mondaySecondData = (String) map.get("mondaySecond");
+                String mondayThirdData = (String) map.get("mondayThird");
+                String mondayForthData = (String) map.get("mondayForth");
+                String mondayFifthData = (String) map.get("mondayFifth");
+                String mondaySixthData = (String) map.get("mondaySixth");
+                String mondaySeventhData = (String) map.get("mondaySeventh");
 
                 String tuesdayFirstData = (String) map.get("tuesdayFirst");
+                String tuesdaySecondData = (String) map.get("tuesdaySecond");
+                String tuesdayThirdData = (String) map.get("tuesdayThird");
+                String tuesdayForthData = (String) map.get("tuesdayForth");
+                String tuesdayFifthData = (String) map.get("tuesdayFifth");
+                String tuesdaySixthData = (String) map.get("tuesdaySixth");
+                String tuesdaySeventhData = (String) map.get("tuesdaySeventh");
+
+                String wednesdayFirstData = (String) map.get("wednesdayFirst");
+                String wednesdaySecondData = (String) map.get("wednesdaySecond");
+                String wednesdayThirdData = (String) map.get("wednesdayThird");
+                String wednesdayForthData = (String) map.get("wednesdayForth");
+                String wednesdayFifthData = (String) map.get("wednesdayFifth");
+                String wednesdaySixthData = (String) map.get("wednesdaySixth");
+                String wednesdaySeventhData = (String) map.get("wednesdaySeventh");
+
+                String thrusdayFirstData = (String) map.get("thrusdayFirst");
+                String thrusdaySecondData = (String) map.get("thrusdaySecond");
+                String thrusdayThirdData = (String) map.get("thrusdayThird");
+                String thrusdayForthData = (String) map.get("thrusdayForth");
+                String thrusdayFifthData = (String) map.get("thrusdayFifth");
+                String thrusdaySixthData = (String) map.get("thrusdaySixth");
+                String thrusdaySeventhData = (String) map.get("thrusdaySeventh");
+
+                String fridayFirstData = (String) map.get("fridayFirst");
+                String fridaySecondData = (String) map.get("fridaySecond");
+                String fridayThirdData = (String) map.get("fridayThird");
+                String fridayForthData = (String) map.get("fridayForth");
+                String fridayFifthData = (String) map.get("fridayFifth");
+                String fridaySixthData = (String) map.get("fridaySixth");
+                String fridaySeventhData = (String) map.get("fridaySeventh");
+
+                String saturdayFirstData = (String) map.get("saturdayFirst");
+                String saturdaySecondData = (String) map.get("saturdaySecond");
+                String saturdayThirdData = (String) map.get("saturdayThird");
+                String saturdayForthData = (String) map.get("saturdayForth");
+                String saturdayFifthData = (String) map.get("saturdayFifth");
+                String saturdaySixthData = (String) map.get("saturdaySixth");
+                String saturdaySeventhData = (String) map.get("saturdaySeventh");
+
 
                 // Setting up actions for updation here on ...
 
                 mondayFirst.setText(mondayFirstData);
                 mondaySecond.setText(mondaySecondData);
+                mondayThird.setText(mondayThirdData);
+                mondayForth.setText(mondayForthData);
+                mondayFifth.setText(mondayFifthData);
+                mondaySixth.setText(mondaySixthData);
+                mondaySeventh.setText(mondaySeventhData);
+
                 tuesdayFirst.setText(tuesdayFirstData);
+                tuesdaySecond.setText(tuesdaySecondData);
+                tuesdayThird.setText(tuesdayThirdData);
+                tuesdayFourth.setText(tuesdayForthData);
+                tuesdayFifth.setText(tuesdayFifthData);
+                tuesdaySixth.setText(tuesdaySixthData);
+                tuesdaySeventh.setText(tuesdaySeventhData);
+
+                wednesdayFirst.setText(wednesdayFirstData);
+                wednesdaySecond.setText(wednesdaySecondData);
+                wednesdayThird.setText(wednesdayThirdData);
+                wednesdayFourth.setText(wednesdayForthData);
+                wednesdayFifth.setText(wednesdayFifthData);
+                wednesdaySixth.setText(wednesdaySixthData);
+                wednesdaySeventh.setText(wednesdaySeventhData);
+
+                thrusdayFirst.setText(thrusdayFirstData);
+                thrusdaySecond.setText(thrusdaySecondData);
+                thrusdayThird.setText(thrusdayThirdData);
+                thrusdayFourth.setText(thrusdayForthData);
+                thrusdayFifth.setText(thrusdayFifthData);
+                thrusdaySixth.setText(thrusdaySixthData);
+                thrusdaySeventh.setText(thrusdaySeventhData);
+
+                fridayFirst.setText(fridayFirstData);
+                fridaySecond.setText(fridaySecondData);
+                fridayThird.setText(fridayThirdData);
+                fridayFourth.setText(fridayForthData);
+                fridayFifth.setText(fridayFifthData);
+                fridaySixth.setText(fridaySixthData);
+                fridaySeventh.setText(fridaySeventhData);
+
+                saturdayFirst.setText(saturdayFirstData);
+                saturdaySecond.setText(saturdaySecondData);
+                saturdayThird.setText(saturdayThirdData);
+                saturdayFourth.setText(saturdayForthData);
+                saturdayFifth.setText(saturdayFifthData);
+                saturdaySixth.setText(saturdaySixthData);
+                saturdaySeventh.setText(saturdaySeventhData);
             }
 
             @Override
@@ -60,6 +150,8 @@ public class CseTable extends AppCompatActivity {
 
             }
         });
+
+        // Firebase stuff ends ...
 
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -69,7 +161,7 @@ public class CseTable extends AppCompatActivity {
         mondayFirst = (TextView) findViewById(R.id.mondayFirst);
         mondaySecond = (TextView) findViewById(R.id.mondaySecond);
         mondayThird = (TextView) findViewById(R.id.mondayThird);
-        mondayFourth = (TextView) findViewById(R.id.mondayFourth);
+        mondayForth = (TextView) findViewById(R.id.mondayFourth);
         mondayFifth = (TextView) findViewById(R.id.mondayFifth);
         mondaySixth = (TextView) findViewById(R.id.mondaySixth);
         mondaySeventh = (TextView) findViewById(R.id.mondaySeventh);
@@ -150,10 +242,10 @@ public class CseTable extends AppCompatActivity {
             }
         });
 
-        mondayFourth.setOnClickListener(new View.OnClickListener() {
+        mondayForth.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String value = mondayFourth.getText().toString();
+                String value = mondayForth.getText().toString();
                 AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
                 builder.setMessage("");
                 builder.setTitle(value);
@@ -627,10 +719,6 @@ public class CseTable extends AppCompatActivity {
                 builder.show();
             }
         });
-
-        //Firebase part yeta gareko xa ...
-
-
     }
 
 
