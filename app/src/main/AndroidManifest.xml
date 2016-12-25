@@ -61,7 +61,14 @@
         <activity
             android:name=".SemesterSelect"
             android:screenOrientation="portrait" />
-        <activity android:name=".SectionSelect"></activity>
+        <activity android:name=".SectionSelect" />
+        <activity android:name=".CseFirstFirst" />
+        <activity android:name=".CseFirstSecond" />
+        <activity android:name=".CseSecondFirst" />
+        <activity android:name=".CseSecondSecond" />
+        <activity android:name=".CseThirdFirst" />
+        <activity android:name=".CseFourthFirst" />
+        <activity android:name=".CseForthSecond"></activity>
     </application>
 
 </manifest>
