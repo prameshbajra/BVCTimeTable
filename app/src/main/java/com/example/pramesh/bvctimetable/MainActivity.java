@@ -8,9 +8,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 public class MainActivity extends AppCompatActivity {
 
     Button cseButton ,eceButton, civilButton, eeeButton, mechButton;
@@ -31,13 +28,12 @@ public class MainActivity extends AppCompatActivity {
         actionBar.setDisplayUseLogoEnabled(true);
         actionBar.setDisplayShowHomeEnabled(true);
 
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd_HHmmss");
-        String currentDateandTime = sdf.format(new Date());
 
         cseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent cseIntent = new Intent(MainActivity.this,CseTable.class);
+                Intent cseIntent = new Intent(MainActivity.this,YearSelect.class);
+                cseIntent.putExtra("value1","cse");
                 startActivity(cseIntent);
             }
         });
@@ -45,7 +41,8 @@ public class MainActivity extends AppCompatActivity {
         mechButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent mechIntent = new Intent(MainActivity.this,MechTable.class);
+                Intent mechIntent = new Intent(MainActivity.this,YearSelect.class);
+                mechIntent.putExtra("value1","mech");
                 startActivity(mechIntent);
             }
         });
@@ -53,7 +50,8 @@ public class MainActivity extends AppCompatActivity {
         civilButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent civilIntent = new Intent(MainActivity.this,CivilTable.class);
+                Intent civilIntent = new Intent(MainActivity.this,YearSelect.class);
+                civilIntent.putExtra("value1","civil");
                 startActivity(civilIntent);
             }
         });
@@ -61,7 +59,8 @@ public class MainActivity extends AppCompatActivity {
         eeeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent eeeIntent = new Intent(MainActivity.this,EeeTable.class);
+                Intent eeeIntent = new Intent(MainActivity.this,YearSelect.class);
+                eeeIntent.putExtra("value1","eee");
                 startActivity(eeeIntent);
             }
         });
@@ -69,7 +68,8 @@ public class MainActivity extends AppCompatActivity {
         eceButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent eceIntent = new Intent(MainActivity.this,EceTable.class);
+                Intent eceIntent = new Intent(MainActivity.this,YearSelect.class);
+                eceIntent.putExtra("value1","ece");
                 startActivity(eceIntent);
             }
         });

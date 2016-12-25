@@ -4,5 +4,6 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="whiteStroke">#ffffff</color>
+    <color name="primaryTransparent">#803F51B5</color>
     <color name="colorPurpleType">#6819a5</color>
 </resources>
