@@ -66,15 +66,36 @@ public class SectionSelect extends AppCompatActivity {
 
 
                     case "mechfirstfirst":
+                        nextIntent = new Intent(SectionSelect.this, MechFirstFirst.class);
+                        startActivity(nextIntent);
+                        break;
                     case "mechfirstsecond":
+                        nextIntent = new Intent(SectionSelect.this, MechFirstSecond.class);
+                        startActivity(nextIntent);
+                        break;
                     case "mechsecondfirst":
+                        nextIntent = new Intent(SectionSelect.this, MechSecondFirst.class);
+                        startActivity(nextIntent);
+                        break;
                     case "mechsecondsecond":
+                        nextIntent = new Intent(SectionSelect.this, MechSecondSecond.class);
+                        startActivity(nextIntent);
+                        break;
                     case "mechthirdfirst":
+                        nextIntent = new Intent(SectionSelect.this, MechThirdFirst.class);
+                        startActivity(nextIntent);
+                        break;
                     case "mechthirdsecond":
                         nextIntent = new Intent(SectionSelect.this, MechTable.class);
                         startActivity(nextIntent);
                     case "mechfourthfirst":
+                        nextIntent = new Intent(SectionSelect.this, MechFourthFirst.class);
+                        startActivity(nextIntent);
+                        break;
                     case "mechfourthsecond":
+                        nextIntent = new Intent(SectionSelect.this, MechFourthSecond.class);
+                        startActivity(nextIntent);
+                        break;
 
                     case "civilfirstfirst":
                     case "civilfirstsecond":

@@ -57,18 +57,33 @@
         </activity>
         <activity
             android:name=".YearSelect"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity
             android:name=".SemesterSelect"
             android:screenOrientation="portrait" />
         <activity android:name=".SectionSelect" />
-        <activity android:name=".CseFirstFirst" />
+        <activity android:name=".CseFirstFirst">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity android:name=".CseFirstSecond" />
         <activity android:name=".CseSecondFirst" />
         <activity android:name=".CseSecondSecond" />
         <activity android:name=".CseThirdFirst" />
         <activity android:name=".CseFourthFirst" />
-        <activity android:name=".CseForthSecond"></activity>
+        <activity android:name=".CseForthSecond" />
+        <activity android:name=".MechFirstFirst" />
+        <activity android:name=".MechFirstSecond" />
+        <activity android:name=".MechSecondFirst" />
+        <activity android:name=".MechSecondSecond" />
+        <activity android:name=".MechThirdFirst" />
+        <activity android:name=".MechFourthFirst" />
+        <activity android:name=".MechFourthSecond"></activity>
     </application>
 
 </manifest>
