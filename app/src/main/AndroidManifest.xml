@@ -83,7 +83,28 @@
         <activity android:name=".MechSecondSecond" />
         <activity android:name=".MechThirdFirst" />
         <activity android:name=".MechFourthFirst" />
-        <activity android:name=".MechFourthSecond"></activity>
+        <activity android:name=".MechFourthSecond" />
+        <activity android:name=".CivilFirstFirst" />
+        <activity android:name=".CivilFirstSecond" />
+        <activity android:name=".CivilSecondFirst" />
+        <activity android:name=".CivilSecondSecond" />
+        <activity android:name=".CivilThirdFirst" />
+        <activity android:name=".CivilFourthFirst" />
+        <activity android:name=".CivilFourthSecond" />
+        <activity android:name=".EeeFirstFirst" />
+        <activity android:name=".EeeFirstSecond" />
+        <activity android:name=".EeeSecondFirst" />
+        <activity android:name=".EeeSecondSecond" />
+        <activity android:name=".EeeThirdFirst" />
+        <activity android:name=".EeeFourthFirst" />
+        <activity android:name=".EeeFourthSecond" />
+        <activity android:name=".EceFirstFirst" />
+        <activity android:name=".EceFirstSecond" />
+        <activity android:name=".EceSecondFirst" />
+        <activity android:name=".EceSecondSecond" />
+        <activity android:name=".EceThirdFirst" />
+        <activity android:name=".EceFourthFirst" />
+        <activity android:name=".EceFourthSecond"></activity>
     </application>
 
 </manifest>
