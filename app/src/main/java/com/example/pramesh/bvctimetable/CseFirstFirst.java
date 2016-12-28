@@ -2,6 +2,7 @@ package com.example.pramesh.bvctimetable;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Toast;
 
 public class CseFirstFirst extends AppCompatActivity {
 
@@ -9,8 +10,8 @@ public class CseFirstFirst extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cse_first_first);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        String sectiondata = getIntent().getStringExtra("sectiondata");
+        Toast.makeText(this, sectiondata, Toast.LENGTH_SHORT).show();
     }
 }
