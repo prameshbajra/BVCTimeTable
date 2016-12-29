@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class EceTable extends AppCompatActivity {
 
@@ -13,6 +14,9 @@ public class EceTable extends AppCompatActivity {
         setContentView(R.layout.activity_ece_table);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        String sectiondata = getIntent().getStringExtra("sectiondata");
+        Toast.makeText(this, sectiondata, Toast.LENGTH_SHORT).show();
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
