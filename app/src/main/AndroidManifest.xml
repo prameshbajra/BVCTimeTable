@@ -11,6 +11,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait">
@@ -20,6 +21,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".CseTable"
             android:screenOrientation="landscape">
@@ -27,6 +29,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
+
         <activity
             android:name=".CivilTable"
             android:screenOrientation="landscape">
@@ -34,6 +37,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
+
         <activity
             android:name=".MechTable"
             android:screenOrientation="landscape">
@@ -41,6 +45,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
+
         <activity
             android:name=".EceTable"
             android:screenOrientation="landscape">
@@ -48,6 +53,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
+
         <activity
             android:name=".EeeTable"
             android:screenOrientation="landscape">
@@ -55,6 +61,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
+
         <activity
             android:name=".YearSelect"
             android:screenOrientation="portrait">
@@ -62,85 +69,125 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
+
         <activity
             android:name=".SemesterSelect"
             android:screenOrientation="portrait" />
+
         <activity android:name=".SectionSelect"
             android:screenOrientation="portrait"/>
+
         <activity android:name=".CseFirstFirst"
-            android:screenOrientation="portrait">
+            android:screenOrientation="landscape">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
+
         <activity android:name=".CseFirstSecond"
             android:screenOrientation="landscape"/>
+
         <activity android:name=".CseSecondFirst"
             android:screenOrientation="landscape"/>
+
         <activity android:name=".CseSecondSecond"
             android:screenOrientation="landscape"/>
+
         <activity android:name=".CseThirdFirst"
             android:screenOrientation="landscape"/>
+
         <activity android:name=".CseFourthFirst"
             android:screenOrientation="landscape"/>
+
         <activity android:name=".CseForthSecond"
             android:screenOrientation="landscape"/>
+
         <activity android:name=".MechFirstFirst"
             android:screenOrientation="landscape"/>
+
         <activity android:name=".MechFirstSecond"
             android:screenOrientation="landscape"/>
+
         <activity android:name=".MechSecondFirst"
             android:screenOrientation="landscape"/>
+
         <activity android:name=".MechSecondSecond"
             android:screenOrientation="landscape"/>
+
         <activity android:name=".MechThirdFirst"
             android:screenOrientation="landscape"/>
+
         <activity android:name=".MechFourthFirst"
             android:screenOrientation="landscape"/>
+
         <activity android:name=".MechFourthSecond"
             android:screenOrientation="landscape"/>
+
         <activity android:name=".CivilFirstFirst"
             android:screenOrientation="landscape"/>
+
         <activity android:name=".CivilFirstSecond"
             android:screenOrientation="landscape"/>
+
         <activity android:name=".CivilSecondFirst"
             android:screenOrientation="landscape"/>
+
         <activity android:name=".CivilSecondSecond"
             android:screenOrientation="landscape"/>
+
         <activity android:name=".CivilThirdFirst"
             android:screenOrientation="landscape"/>
+
         <activity android:name=".CivilFourthFirst"
             android:screenOrientation="landscape"/>
+
         <activity android:name=".CivilFourthSecond"
             android:screenOrientation="landscape"/>
+
         <activity android:name=".EeeFirstFirst"
             android:screenOrientation="landscape"/>
+
         <activity android:name=".EeeFirstSecond"
             android:screenOrientation="landscape"/>
+
         <activity android:name=".EeeSecondFirst"
             android:screenOrientation="landscape"/>
+
         <activity android:name=".EeeSecondSecond"
             android:screenOrientation="landscape"/>
+
         <activity android:name=".EeeThirdFirst"
             android:screenOrientation="landscape"/>
+
         <activity android:name=".EeeFourthFirst"
             android:screenOrientation="landscape"/>
+
         <activity android:name=".EeeFourthSecond"
             android:screenOrientation="landscape"/>
+
         <activity android:name=".EceFirstFirst"
             android:screenOrientation="landscape"/>
+
         <activity android:name=".EceFirstSecond"
             android:screenOrientation="landscape"/>
+
         <activity android:name=".EceSecondFirst"
             android:screenOrientation="landscape"/>
+
         <activity android:name=".EceSecondSecond"
             android:screenOrientation="landscape"/>
+
         <activity android:name=".EceThirdFirst"
             android:screenOrientation="landscape"/>
+
         <activity android:name=".EceFourthFirst"
             android:screenOrientation="landscape"/>
+
         <activity android:name=".EceFourthSecond"
-            android:screenOrientation="landscape"></activity>
+            android:screenOrientation="landscape">
+
+        </activity>
+
     </application>
 
 </manifest>
