@@ -6,22 +6,22 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-public class EeeTable extends AppCompatActivity {
+public class MechSecondSecond extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_eee_table);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        setContentView(R.layout.activity_mech_second_second);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
 
         String sectiondata = getIntent().getStringExtra("sectiondata");
         Toast.makeText(this, sectiondata, Toast.LENGTH_SHORT).show();
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu,menu);
-        setTitle("Electrical And Electronics Engineering");
+        getMenuInflater().inflate(R.menu.menu, menu);
+        setTitle("Mechanical Department");
         return true;
     }
 
@@ -29,7 +29,7 @@ public class EeeTable extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
 
-        if(id == R.id.action_settings){
+        if (id == R.id.action_settings) {
             return true;
         }
         return super.onOptionsItemSelected(item);

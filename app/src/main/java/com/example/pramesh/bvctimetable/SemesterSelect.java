@@ -17,6 +17,8 @@ public class SemesterSelect extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_semester_select);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
 
         final String valueGet = getIntent().getStringExtra("value2");
 
@@ -45,6 +47,7 @@ public class SemesterSelect extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu,menu);
+        setTitle("Semester");
         return true;
     }
 

@@ -27,7 +27,7 @@
             android:screenOrientation="landscape">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".SectionSelect" />
         </activity>
 
         <activity
@@ -35,7 +35,7 @@
             android:screenOrientation="landscape">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".SectionSelect" />
         </activity>
 
         <activity
@@ -43,7 +43,7 @@
             android:screenOrientation="landscape">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".SectionSelect" />
         </activity>
 
         <activity
@@ -51,7 +51,7 @@
             android:screenOrientation="landscape">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".SectionSelect" />
         </activity>
 
         <activity
@@ -59,7 +59,7 @@
             android:screenOrientation="landscape">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".SectionSelect" />
         </activity>
 
         <activity
@@ -72,120 +72,298 @@
 
         <activity
             android:name=".SemesterSelect"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".YearSelect" />
+        </activity>
 
-        <activity android:name=".SectionSelect"
-            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SectionSelect"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SemesterSelect" />
+        </activity>
 
-        <activity android:name=".CseFirstFirst"
+        <activity
+            android:name=".CseFirstFirst"
             android:screenOrientation="landscape">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".SectionSelect" />
         </activity>
 
-        <activity android:name=".CseFirstSecond"
-            android:screenOrientation="landscape"/>
-
-        <activity android:name=".CseSecondFirst"
-            android:screenOrientation="landscape"/>
-
-        <activity android:name=".CseSecondSecond"
-            android:screenOrientation="landscape"/>
-
-        <activity android:name=".CseThirdFirst"
-            android:screenOrientation="landscape"/>
-
-        <activity android:name=".CseFourthFirst"
-            android:screenOrientation="landscape"/>
-
-        <activity android:name=".CseForthSecond"
-            android:screenOrientation="landscape"/>
-
-        <activity android:name=".MechFirstFirst"
-            android:screenOrientation="landscape"/>
-
-        <activity android:name=".MechFirstSecond"
-            android:screenOrientation="landscape"/>
-
-        <activity android:name=".MechSecondFirst"
-            android:screenOrientation="landscape"/>
-
-        <activity android:name=".MechSecondSecond"
-            android:screenOrientation="landscape"/>
-
-        <activity android:name=".MechThirdFirst"
-            android:screenOrientation="landscape"/>
-
-        <activity android:name=".MechFourthFirst"
-            android:screenOrientation="landscape"/>
-
-        <activity android:name=".MechFourthSecond"
-            android:screenOrientation="landscape"/>
-
-        <activity android:name=".CivilFirstFirst"
-            android:screenOrientation="landscape"/>
-
-        <activity android:name=".CivilFirstSecond"
-            android:screenOrientation="landscape"/>
-
-        <activity android:name=".CivilSecondFirst"
-            android:screenOrientation="landscape"/>
-
-        <activity android:name=".CivilSecondSecond"
-            android:screenOrientation="landscape"/>
-
-        <activity android:name=".CivilThirdFirst"
-            android:screenOrientation="landscape"/>
-
-        <activity android:name=".CivilFourthFirst"
-            android:screenOrientation="landscape"/>
-
-        <activity android:name=".CivilFourthSecond"
-            android:screenOrientation="landscape"/>
-
-        <activity android:name=".EeeFirstFirst"
-            android:screenOrientation="landscape"/>
-
-        <activity android:name=".EeeFirstSecond"
-            android:screenOrientation="landscape"/>
-
-        <activity android:name=".EeeSecondFirst"
-            android:screenOrientation="landscape"/>
-
-        <activity android:name=".EeeSecondSecond"
-            android:screenOrientation="landscape"/>
-
-        <activity android:name=".EeeThirdFirst"
-            android:screenOrientation="landscape"/>
-
-        <activity android:name=".EeeFourthFirst"
-            android:screenOrientation="landscape"/>
-
-        <activity android:name=".EeeFourthSecond"
-            android:screenOrientation="landscape"/>
-
-        <activity android:name=".EceFirstFirst"
-            android:screenOrientation="landscape"/>
-
-        <activity android:name=".EceFirstSecond"
-            android:screenOrientation="landscape"/>
-
-        <activity android:name=".EceSecondFirst"
-            android:screenOrientation="landscape"/>
-
-        <activity android:name=".EceSecondSecond"
-            android:screenOrientation="landscape"/>
-
-        <activity android:name=".EceThirdFirst"
-            android:screenOrientation="landscape"/>
-
-        <activity android:name=".EceFourthFirst"
-            android:screenOrientation="landscape"/>
-
-        <activity android:name=".EceFourthSecond"
+        <activity
+            android:name=".CseFirstSecond"
             android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SectionSelect" />
+        </activity>
 
+        <activity
+            android:name=".CseSecondFirst"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SectionSelect" />
+        </activity>
+
+        <activity
+            android:name=".CseSecondSecond"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SectionSelect" />
+        </activity>
+
+        <activity
+            android:name=".CseThirdFirst"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SectionSelect" />
+        </activity>
+
+        <activity
+            android:name=".CseFourthFirst"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SectionSelect" />
+        </activity>
+
+        <activity
+            android:name=".CseForthSecond"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SectionSelect" />
+        </activity>
+
+        <activity
+            android:name=".MechFirstFirst"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SectionSelect" />
+        </activity>
+
+        <activity
+            android:name=".MechFirstSecond"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SectionSelect" />
+        </activity>
+
+        <activity
+            android:name=".MechSecondFirst"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SectionSelect" />
+        </activity>
+
+        <activity
+            android:name=".MechSecondSecond"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SectionSelect" />
+        </activity>
+
+        <activity
+            android:name=".MechThirdFirst"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SectionSelect" />
+        </activity>
+
+        <activity
+            android:name=".MechFourthFirst"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SectionSelect" />
+        </activity>
+
+        <activity
+            android:name=".MechFourthSecond"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SectionSelect" />
+        </activity>
+
+        <activity
+            android:name=".CivilFirstFirst"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SectionSelect" />
+        </activity>
+
+        <activity
+            android:name=".CivilFirstSecond"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SectionSelect" />
+        </activity>
+
+        <activity
+            android:name=".CivilSecondFirst"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SectionSelect" />
+        </activity>
+
+        <activity
+            android:name=".CivilSecondSecond"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SectionSelect" />
+        </activity>
+
+        <activity
+            android:name=".CivilThirdFirst"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SectionSelect" />
+        </activity>
+
+        <activity
+            android:name=".CivilFourthFirst"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SectionSelect" />
+        </activity>
+
+        <activity
+            android:name=".CivilFourthSecond"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SectionSelect" />
+        </activity>
+
+        <activity
+            android:name=".EeeFirstFirst"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SectionSelect" />
+        </activity>
+
+        <activity
+            android:name=".EeeFirstSecond"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SectionSelect" />
+        </activity>
+
+        <activity
+            android:name=".EeeSecondFirst"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SectionSelect" />
+        </activity>
+
+        <activity
+            android:name=".EeeSecondSecond"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SectionSelect" />
+        </activity>
+
+        <activity
+            android:name=".EeeThirdFirst"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SectionSelect" />
+        </activity>
+
+        <activity
+            android:name=".EeeFourthFirst"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SectionSelect" />
+        </activity>
+
+        <activity
+            android:name=".EeeFourthSecond"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SectionSelect" />
+        </activity>
+
+        <activity
+            android:name=".EceFirstFirst"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SectionSelect" />
+        </activity>
+
+        <activity
+            android:name=".EceFirstSecond"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SectionSelect" />
+        </activity>
+
+        <activity
+            android:name=".EceSecondFirst"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SectionSelect" />
+        </activity>
+
+        <activity
+            android:name=".EceSecondSecond"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SectionSelect" />
+        </activity>
+
+        <activity
+            android:name=".EceThirdFirst"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SectionSelect" />
+        </activity>
+
+        <activity
+            android:name=".EceFourthFirst"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SectionSelect" />
+        </activity>
+
+        <activity
+            android:name=".EceFourthSecond"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SectionSelect" />
         </activity>
 
     </application>
