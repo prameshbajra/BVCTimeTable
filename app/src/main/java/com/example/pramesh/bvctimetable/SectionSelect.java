@@ -19,8 +19,7 @@ public class SectionSelect extends AppCompatActivity {
 
 //        Getting Values from Previous activity
 
-        Bundle bub = getIntent().getExtras();
-        final String value = bub.getString("value");
+        final String value = getIntent().getStringExtra("value");
 
         section_a = (Button) findViewById(R.id.section_a);
         section_b = (Button) findViewById(R.id.section_b);

@@ -212,33 +212,24 @@ public class CseTable extends AppCompatActivity {
         mondayFirst.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setTitle("Android Training Lab");
-                builder.setMessage("");
-                builder.setCancelable(true);
-                builder.show();
+                String value = "And";
+                alertDial(value);
             }
         });
 
         mondaySecond.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setTitle("Android Training Lab");
-                builder.setMessage("");
-                builder.setCancelable(true);
-                builder.show();
+                String value = mondaySecond.getText().toString();
+                alertDial(value);
             }
         });
 
         mondayThird.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setTitle("Android Training Lab");
-                builder.setMessage("");
-                builder.setCancelable(true);
-                builder.show();
+                String value = mondayThird.getText().toString();
+                alertDial(value);
             }
         });
 
@@ -246,11 +237,7 @@ public class CseTable extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String value = mondayForth.getText().toString();
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setMessage("");
-                builder.setTitle(value);
-                builder.setCancelable(true);
-                builder.show();
+                alertDial(value);
             }
         });
 
@@ -258,11 +245,7 @@ public class CseTable extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String value = mondayFifth.getText().toString();
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setTitle(value);
-                builder.setMessage("");
-                builder.setCancelable(true);
-                builder.show();
+                alertDial(value);
             }
         });
 
@@ -270,11 +253,7 @@ public class CseTable extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String value = mondaySixth.getText().toString();
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setTitle(value);
-                builder.setMessage("");
-                builder.setCancelable(true);
-                builder.show();
+                alertDial(value);
             }
         });
 
@@ -282,11 +261,7 @@ public class CseTable extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String value = mondaySeventh.getText().toString();
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setTitle(value);
-                builder.setMessage("");
-                builder.setCancelable(true);
-                builder.show();
+                alertDial(value);
             }
         });
 
@@ -296,11 +271,7 @@ public class CseTable extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String value = tuesdayFirst.getText().toString();
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setTitle(value);
-                builder.setMessage("");
-                builder.setCancelable(true);
-                builder.show();
+                alertDial(value);
             }
         });
 
@@ -308,11 +279,7 @@ public class CseTable extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String value = tuesdaySecond.getText().toString();
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setTitle(value);
-                builder.setMessage("");
-                builder.setCancelable(true);
-                builder.show();
+                alertDial(value);
             }
         });
 
@@ -320,11 +287,7 @@ public class CseTable extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String value = tuesdayThird.getText().toString();
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setTitle(value);
-                builder.setMessage("");
-                builder.setCancelable(true);
-                builder.show();
+                alertDial(value);
             }
         });
 
@@ -332,11 +295,7 @@ public class CseTable extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String value = tuesdayFourth.getText().toString();
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setTitle(value);
-                builder.setMessage("");
-                builder.setCancelable(true);
-                builder.show();
+                alertDial(value);
             }
         });
 
@@ -344,11 +303,7 @@ public class CseTable extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String value = tuesdayFifth.getText().toString();
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setTitle(value);
-                builder.setMessage("");
-                builder.setCancelable(true);
-                builder.show();
+                alertDial(value);
             }
         });
 
@@ -356,11 +311,7 @@ public class CseTable extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String value = tuesdaySixth.getText().toString();
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setTitle(value);
-                builder.setMessage("");
-                builder.setCancelable(true);
-                builder.show();
+                alertDial(value);
             }
         });
 
@@ -368,11 +319,7 @@ public class CseTable extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String value = tuesdaySeventh.getText().toString();
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setTitle(value);
-                builder.setMessage("");
-                builder.setCancelable(true);
-                builder.show();
+                alertDial(value);
             }
         });
 
@@ -382,11 +329,7 @@ public class CseTable extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String value = wednesdayFirst.getText().toString();
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setTitle(value);
-                builder.setMessage("");
-                builder.setCancelable(true);
-                builder.show();
+                alertDial(value);
             }
         });
 
@@ -394,11 +337,7 @@ public class CseTable extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String value = wednesdaySecond.getText().toString();
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setTitle(value);
-                builder.setMessage("");
-                builder.setCancelable(true);
-                builder.show();
+                alertDial(value);
             }
         });
 
@@ -406,11 +345,7 @@ public class CseTable extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String value = wednesdayThird.getText().toString();
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setTitle(value);
-                builder.setMessage("");
-                builder.setCancelable(true);
-                builder.show();
+                alertDial(value);
             }
         });
 
@@ -418,11 +353,7 @@ public class CseTable extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String value = wednesdayFourth.getText().toString();
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setTitle(value);
-                builder.setMessage("");
-                builder.setCancelable(true);
-                builder.show();
+                alertDial(value);
             }
         });
 
@@ -430,11 +361,7 @@ public class CseTable extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String value = wednesdayFifth.getText().toString();
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setTitle(value);
-                builder.setMessage("");
-                builder.setCancelable(true);
-                builder.show();
+                alertDial(value);
             }
         });
 
@@ -442,11 +369,7 @@ public class CseTable extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String value = wednesdaySixth.getText().toString();
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setTitle(value);
-                builder.setMessage("");
-                builder.setCancelable(true);
-                builder.show();
+                alertDial(value);
             }
         });
 
@@ -454,11 +377,7 @@ public class CseTable extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String value = wednesdaySeventh.getText().toString();
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setTitle(value);
-                builder.setMessage("");
-                builder.setCancelable(true);
-                builder.show();
+                alertDial(value);
             }
         });
 
@@ -468,11 +387,7 @@ public class CseTable extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String value = thrusdayFirst.getText().toString();
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setTitle(value);
-                builder.setMessage("");
-                builder.setCancelable(true);
-                builder.show();
+                alertDial(value);
             }
         });
 
@@ -480,11 +395,7 @@ public class CseTable extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String value = thrusdaySecond.getText().toString();
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setTitle(value);
-                builder.setMessage("");
-                builder.setCancelable(true);
-                builder.show();
+                alertDial(value);
             }
         });
 
@@ -492,11 +403,7 @@ public class CseTable extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String value = thrusdayThird.getText().toString();
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setTitle(value);
-                builder.setMessage("");
-                builder.setCancelable(true);
-                builder.show();
+                alertDial(value);
             }
         });
 
@@ -504,11 +411,7 @@ public class CseTable extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String value = thrusdayFourth.getText().toString();
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setTitle(value);
-                builder.setMessage("");
-                builder.setCancelable(true);
-                builder.show();
+                alertDial(value);
             }
         });
 
@@ -516,11 +419,7 @@ public class CseTable extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String value = thrusdayFifth.getText().toString();
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setTitle(value);
-                builder.setMessage("");
-                builder.setCancelable(true);
-                builder.show();
+                alertDial(value);
             }
         });
 
@@ -528,11 +427,7 @@ public class CseTable extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String value = thrusdaySixth.getText().toString();
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setTitle(value);
-                builder.setMessage("");
-                builder.setCancelable(true);
-                builder.show();
+                alertDial(value);
             }
         });
 
@@ -540,11 +435,7 @@ public class CseTable extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String value = thrusdaySeventh.getText().toString();
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setTitle(value);
-                builder.setMessage("");
-                builder.setCancelable(true);
-                builder.show();
+                alertDial(value);
             }
         });
 
@@ -554,11 +445,7 @@ public class CseTable extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String value = fridayFirst.getText().toString();
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setTitle(value);
-                builder.setMessage("");
-                builder.setCancelable(true);
-                builder.show();
+                alertDial(value);
             }
         });
 
@@ -566,11 +453,7 @@ public class CseTable extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String value = fridaySecond.getText().toString();
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setTitle(value);
-                builder.setMessage("");
-                builder.setCancelable(true);
-                builder.show();
+                alertDial(value);
             }
         });
 
@@ -578,11 +461,7 @@ public class CseTable extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String value = fridayThird.getText().toString();
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setTitle(value);
-                builder.setMessage("");
-                builder.setCancelable(true);
-                builder.show();
+                alertDial(value);
             }
         });
 
@@ -590,11 +469,7 @@ public class CseTable extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String value = fridayFourth.getText().toString();
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setTitle(value);
-                builder.setMessage("");
-                builder.setCancelable(true);
-                builder.show();
+                alertDial(value);
             }
         });
 
@@ -602,11 +477,7 @@ public class CseTable extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String value = fridayFifth.getText().toString();
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setTitle(value);
-                builder.setMessage("");
-                builder.setCancelable(true);
-                builder.show();
+                alertDial(value);
             }
         });
 
@@ -614,11 +485,7 @@ public class CseTable extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String value = fridaySixth.getText().toString();
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setTitle(value);
-                builder.setMessage("");
-                builder.setCancelable(true);
-                builder.show();
+                alertDial(value);
             }
         });
 
@@ -626,11 +493,7 @@ public class CseTable extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String value = fridaySeventh.getText().toString();
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setTitle(value);
-                builder.setMessage("");
-                builder.setCancelable(true);
-                builder.show();
+                alertDial(value);
             }
         });
 
@@ -640,11 +503,7 @@ public class CseTable extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String value = saturdayFirst.getText().toString();
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setTitle(value);
-                builder.setMessage("");
-                builder.setCancelable(true);
-                builder.show();
+                alertDial(value);
             }
         });
 
@@ -652,11 +511,7 @@ public class CseTable extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String value = saturdaySecond.getText().toString();
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setTitle(value);
-                builder.setMessage("");
-                builder.setCancelable(true);
-                builder.show();
+                alertDial(value);
             }
         });
 
@@ -664,11 +519,7 @@ public class CseTable extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String value = saturdayThird.getText().toString();
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setTitle(value);
-                builder.setMessage("");
-                builder.setCancelable(true);
-                builder.show();
+                alertDial(value);
             }
         });
 
@@ -676,11 +527,7 @@ public class CseTable extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String value = saturdayFourth.getText().toString();
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setTitle(value);
-                builder.setMessage("");
-                builder.setCancelable(true);
-                builder.show();
+                alertDial(value);
             }
         });
 
@@ -688,11 +535,7 @@ public class CseTable extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String value = saturdayFifth.getText().toString();
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setTitle(value);
-                builder.setMessage("");
-                builder.setCancelable(true);
-                builder.show();
+                alertDial(value);
             }
         });
 
@@ -700,11 +543,7 @@ public class CseTable extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String value = saturdaySixth.getText().toString();
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setTitle(value);
-                builder.setMessage("");
-                builder.setCancelable(true);
-                builder.show();
+                alertDial(value);
             }
         });
 
@@ -712,13 +551,17 @@ public class CseTable extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String value = saturdaySeventh.getText().toString();
-                AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
-                builder.setTitle(value);
-                builder.setMessage("");
-                builder.setCancelable(true);
-                builder.show();
+                alertDial(value);
             }
         });
+    }
+
+    public void alertDial(String value) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(CseTable.this);
+        builder.setTitle(value);
+        builder.setMessage("");
+        builder.setCancelable(true);
+        builder.show();
     }
 
 

@@ -1,13 +1,12 @@
 package com.example.pramesh.bvctimetable;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 public class YearSelect extends AppCompatActivity {
 
@@ -25,8 +24,7 @@ public class YearSelect extends AppCompatActivity {
 
         //Getting value1 from previous activity ...
 
-        Bundle bundle = getIntent().getExtras();
-        final String value1get = bundle.getString("value1");
+        final String value1get = getIntent().getStringExtra("value1");
 
         firstYear = (Button) findViewById(R.id.firstYear);
         secondYear = (Button) findViewById(R.id.secondYear);
